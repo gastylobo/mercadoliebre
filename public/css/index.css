@@ -10,15 +10,59 @@ body {
    
 }
 
-header{
-    background-color: #EAC926;
-}   
-
 main{
     width: 90%;
     margin: auto;
 }
 
+
+
+/* HEADER*/ 
+
+header{
+    background-color: #EAC926;
+}   
+
+.header-top{
+    text-align: center;
+       
+}
+
+.copy-header{
+    font-size: 16px;
+}
+
+.tamanologo {
+    width: 50%;
+}
+
+
+.listas a {
+    text-decoration: none;  
+    color: #000000;
+    display: inline-block;
+    padding: 2px;
+}
+
+.listas{
+    display: none;
+}
+
+
+.hamburguesa {
+    text-align: center;
+    color: white;
+    
+}
+
+.hamburguesa i{
+    background-color: #1259c3;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+
+/* ARTICLE*/
 
 article{
     margin-top: 10px;
@@ -31,41 +75,14 @@ article{
 }
 
 article img {
-    width: 50%;
+    width: 70%;
+    
 }
 
 article div {
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
-
-.margenFooter{
-    text-align: center;
-    margin: 50px 200px 50px 200px;
-}
-
-
-footer{
-    color: #666;
-}
-
-
-footer h3{
-    font-size: 24px;
-    font-weight: lighter;    
-}
-
-footer p{
-    font-weight: 100;
-}
-
-
-footer i{
-    font-size: 50px;
-    color: #1259c3;
-}
-
-
 
 h2{
     font-size: 24px;
@@ -92,48 +109,7 @@ p{
     color: #39b54a;
 }
 
-.centrar{
-    text-align: center;
-}
 
-.tamanologo {
-    width: 80%;
-}
-
-.centrar2{
-    font-size: 16px;
-    Text-align: center;
-}
-
-.noDecoracion {
-    text-decoration: none;
-}
-
-.listas a {
-    text-decoration: none;  
-}
-
-.listas{
-    display: none;
-}
-
-
-
-.hamburguesa {
-    text-align: center;
-    color: white;
-    
-}
-
-.hamburguesa i{
-    background-color: #1259c3;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-}
-
-.copy {
-    text-align: left;
-}
 
 
 /*CAMION DE ENVIO*/
@@ -151,11 +127,40 @@ article i{
 
 
 
+/* FOOTER*/ 
+
+.margenFooter{
+    text-align: center;
+    margin: 50px 200px 50px 200px;
+}
+
+footer{
+    color: #666;
+}
+
+
+footer h3{
+    font-size: 24px;
+    font-weight: lighter;    
+}
+
+footer p{
+    font-weight: 100;
+}
+
+
+footer i{
+    font-size: 50px;
+    color: #1259c3;
+}
+
+
 
 
 
 
 @media (min-width: 361px){
+
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -173,7 +178,56 @@ article i{
     }
 }
 
-@media (min-width: 769){
+@media (min-width: 769px){
+    
+    /*HEADER*/
+    
+    .header-top{
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tamanologo {
+        width: 25%;
+    }
+
+    .search-header {
+        max-width: 35%;
+    }
+    
+    .copy-header{
+       max-width: 30%;
+       text-align: right;
+    }
+
+    
+    .listas{
+        /*border: 2px red dotted;*/
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: .8rem;
+    }
+    
+    .left-listas,  .rigth-listas {
+        display: flex;
+    }
+
+    .left-listas li, .rigth-listas li{
+        margin: 0 10px;
+    }
+
+    
+
+    .hamburguesa{
+        display: none;
+    }
+
+     /*ARTICLE*/
+    
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }    
@@ -182,11 +236,6 @@ article i{
         display: block;
     }
     
-    .listas{
-        display: block;
-    }
     
-    .hamburguesa{
-        display: none;
-    }
+   
 }
