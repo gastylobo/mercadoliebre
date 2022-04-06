@@ -6,6 +6,8 @@
 body {
     font-family: 'Roboto', sans-serif; 
     font-weight: 400;
+    background: #ebebeb;
+   
 }
 
 header{
@@ -15,8 +17,8 @@ header{
 main{
     width: 90%;
     margin: auto;
-    background: #ebebeb;
 }
+
 
 article{
     margin-top: 10px;
@@ -24,6 +26,7 @@ article{
     width: 90%;
     margin: 50px auto;
     padding: 15px;
+    
     /*border-top: 5px solid blue;*/
 }
 
@@ -67,11 +70,13 @@ footer i{
 h2{
     font-size: 24px;
     color: #666;
+    margin: 5%;
 }
 
 h3{
     font-size: 16px;
     color: #666;
+    display: none;
 }
 
 
@@ -92,7 +97,7 @@ p{
 }
 
 .tamanologo {
-    width: 450px;
+    width: 80%;
 }
 
 .centrar2{
@@ -105,7 +110,11 @@ p{
 }
 
 .listas a {
-    text-decoration: none;    
+    text-decoration: none;  
+}
+
+.listas{
+    display: none;
 }
 
 
@@ -113,6 +122,7 @@ p{
 .hamburguesa {
     text-align: center;
     color: white;
+    
 }
 
 .hamburguesa i{
@@ -125,30 +135,58 @@ p{
     text-align: left;
 }
 
+
+/*CAMION DE ENVIO*/
+
 article i{
     color: #39b54a;  
+    display: flex;
+}
+
+.border {
+    border-radius: 100%;
+    border: 1px solid;
+    padding: .5rem;
 }
 
 
 
 
-
-/*
-div.hamburguesa i{
-    width: 40px;
-    height: 40px;
-    background-color: #1259c3;
-    padding: 10px 10px 15px 10px ;
-    border-radius: 10px;
-}
-*/
 
 
 
 @media (min-width: 361px){
-    
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    h3{
+        display: block;
+    }
+
+    .listas{
+        display: block;
+    }
+
+    .hamburguesa{
+        display: none;
+    }
 }
 
 @media (min-width: 769){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
     
+    h3{
+        display: block;
+    }
+    
+    .listas{
+        display: block;
+    }
+    
+    .hamburguesa{
+        display: none;
+    }
 }
