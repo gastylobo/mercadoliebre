@@ -1,0 +1,154 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+}
+
+header{
+    background-color: #EAC926;
+}   
+
+main{
+    width: 90%;
+    margin: auto;
+    background: #ebebeb;
+}
+
+article{
+    margin-top: 10px;
+    background: white;
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+    /*border-top: 5px solid blue;*/
+}
+
+article img {
+    width: 50%;
+}
+
+article div {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.margenFooter{
+    text-align: center;
+    margin: 50px 200px 50px 200px;
+}
+
+
+footer{
+    color: #666;
+}
+
+
+footer h3{
+    font-size: 24px;
+    font-weight: lighter;    
+}
+
+footer p{
+    font-weight: 100;
+}
+
+
+footer i{
+    font-size: 50px;
+    color: #1259c3;
+}
+
+
+
+h2{
+    font-size: 24px;
+    color: #666;
+}
+
+h3{
+    font-size: 16px;
+    color: #666;
+}
+
+
+p{
+    font-size: 16px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuento {
+    color: #39b54a;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.tamanologo {
+    width: 450px;
+}
+
+.centrar2{
+    font-size: 16px;
+    Text-align: center;
+}
+
+.noDecoracion {
+    text-decoration: none;
+}
+
+.listas a {
+    text-decoration: none;    
+}
+
+
+
+.hamburguesa {
+    text-align: center;
+    color: white;
+}
+
+.hamburguesa i{
+    background-color: #1259c3;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.copy {
+    text-align: left;
+}
+
+article i{
+    color: #39b54a;  
+}
+
+
+
+
+
+/*
+div.hamburguesa i{
+    width: 40px;
+    height: 40px;
+    background-color: #1259c3;
+    padding: 10px 10px 15px 10px ;
+    border-radius: 10px;
+}
+*/
+
+
+
+@media (min-width: 361px){
+    
+}
+
+@media (min-width: 769){
+    
+}
