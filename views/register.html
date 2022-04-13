@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Teko&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/register.css" />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <form action="/ruta" method="post" class="register">
+        <div>
+          <label for="Nombre-apellido"></label>
+          <input
+            type="text"
+            name="Nombre y apellido"
+            placeholder="Nombre y apellido"
+            class="placeholder"
+          />
+        </div>
+
+        <div>
+          <label for="Nombre-de-usuari@"></label>
+          <input
+            type="text"
+            name="Nombre de usuari@"
+            placeholder="Nombre de usuari@"
+            class="placeholder"
+          />
+        </div>
+
+        <div>
+          <label for="Fecha-de-nacimiento"></label>
+          <input
+            type="date"
+            name="Fecha de nacimiento"
+            placeholder="Fecha de nacimiento"
+            class="placeholder"
+          />
+        </div>
+
+        <div>
+          <label for="Domicilio"></label>
+          <input
+            type="text"
+            name="Domicilio"
+            placeholder="Domicilio"
+            class="placeholder"
+          />
+        </div>
+
+        <div>
+          <label for="consulta">
+            <h2>Perfil de usuario</h2>
+            <input type="radio" name="consulta" value="comprar" /> Comprar
+            <input type="radio" name="consulta" value="vender" /> Vender
+          </label>
+        </div>
+
+        <div>
+          <label for="preferencias" class="checkbox">           
+            <h2>Perfil de usuario</h2>
+            <div><input type="checkbox" name="preferencias" value="Electro" /> Electro </div>
+            <div><input type="checkbox" name="preferencias" value="Moda" /> Moda </div>
+            <div><input type="checkbox" name="preferencias" value="Hogar" /> Hogar </div>
+            <div><input type="checkbox" name="preferencias" value="Juguetería" /> Juguetería </div>
+            <div><input type="checkbox" name="preferencias" value="Vida sana" /> Vidasana </div>
+          </label>           
+        </div>
+
+        <div>
+          <label for="foto-usuario"></label>
+          <input type="file" accept="image/*" name="Foto de usuario" />
+        </div>
+
+        <div>
+          <label for="contraseña"></label>
+          <input
+            type="password"
+            name="contraseña"
+            placeholder="Contraseña"
+            class="placeholder"
+          />
+        </div>
+
+        <div>
+          <label for="confirmar-contraseña"></label>
+          <input
+            type="password"
+            name="confirmar-contraseña"
+            placeholder="Confirmar Contraseña"
+            class="placeholder"
+          />
+        </div>
+
+        <div class="botones">
+          <button class="enviar" type="submit"><a href="/">Enviar</a></button>
+          <button class="borrar" type="reset">Borrar</button>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

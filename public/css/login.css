@@ -1,0 +1,45 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    background: #ebebeb;
+   
+}
+
+
+.login {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login div{
+    margin-top: 10px;
+}
+
+.placeholder{
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.login div a{
+    text-decoration: none;
+    color: black;
+}
+
+.enviar{
+    width: 150px;   
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.enviar:hover{
+    background-color: greenyellow;
+    border-radius: 100px;
+}

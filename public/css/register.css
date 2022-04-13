@@ -1,0 +1,77 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    background: #ebebeb;
+   
+}
+
+
+/* CUERPO */
+
+h2{
+    font-size: 1.2rem;
+}
+
+.register {
+    width: 30%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.register div{
+    margin-top: 20px;
+}
+
+.register div a{
+    text-decoration: none;
+    color: black;
+}
+
+.placeholder{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.botones{
+    text-align: center;
+    
+}
+
+.enviar{
+    width: 150px;   
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.enviar:hover{
+    background-color: greenyellow;
+    border-radius: 100px;
+}
+
+.borrar{
+    width: 150px;   
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.borrar:hover{
+    background-color: rgb(255, 102, 0);
+    border-radius: 100px;
+}
+
