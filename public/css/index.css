@@ -41,11 +41,11 @@ header{
 }
 
 .tamanologo {
-    width: 40%;
+    flex-grow: 0.4;
 }
 
 .search-header{
-    width: 35%;
+    flex-grow: 0.4;
 
 }
 
