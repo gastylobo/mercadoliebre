@@ -42,6 +42,7 @@ header{
 }
 
 .tamanologo {
+    width: 70%;
     flex-grow: 0.4;
 }
 
@@ -149,10 +150,7 @@ h2{
 /*TABLET*/
 
 @media (min-width: 361px){
-    .tamanologo{
-        width: 50%;
-    }
-
+    
     .search-header{
         width: 50%;
     }
@@ -213,9 +211,7 @@ h2{
         align-items: center;
     }
 
-    .tamanologo {
-        width: 25%;
-    }
+    
 
     .search-header {
         max-width: 35%;
