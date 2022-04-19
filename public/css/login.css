@@ -103,13 +103,15 @@ h1{
     font-size: 1.1rem;
     border-radius: 10px;
     text-decoration: none;
-    transition: all 500ms;
+    transition: all 1000ms ease-out;
 }
 
 .enviar:hover{
-    background-color: greenyellow;
-    border-radius: 100px;
+    background-color: #0022AA;
+    border-radius: 50px;
 }
+
+
 
 
 

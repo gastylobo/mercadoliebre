@@ -29,7 +29,7 @@ header{
 }
 
 .copy-header{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
@@ -86,8 +86,16 @@ article{
     padding: 15px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 450ms;
     /*border-top: 5px solid blue;*/
 }
+
+article:hover{
+    box-shadow: 0px 0px 10px #39b54a;
+}
+
+
 
 article img {
     width: 70%;
@@ -96,13 +104,13 @@ article img {
 
 
 h2{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #666;
-    margin: 5%;
+    margin: 10px auto;
 }
 
 h3{
-    font-size: 16px;
+    font-size: 0.7rem;
     color: #666;
     display: none;
 }
@@ -136,6 +144,17 @@ p{
     position: relative;
 }
 
+.descripcion{
+    display: none;
+}
+
+.descripcion:hover{
+    display: block;
+}
+
+
+
+
 /*CAMION DE ENVIO*/
 
 article i{
@@ -146,7 +165,7 @@ article i{
 
 article i{
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 5px;
     width: 30px;
     height: 30px;
@@ -156,15 +175,21 @@ article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 450ms ease-out;
     }
 
+article i:hover{
+    transform: rotate(-90deg);
+    }
 
 
 /* FOOTER*/ 
 
 .margenFooter{
+    width: 70%;
     text-align: center;
     margin: 50px 200px 50px 200px;
+    margin: auto;
 } 
 
 footer{
@@ -173,21 +198,24 @@ footer{
 
 
 footer h3{
-    font-size: 24px;
-    font-weight: lighter;    
+    font-size: 1.2rem;
+    font-weight: 400;    
 }
 
 footer p{
+    font-size: 0.8rem;
     font-weight: 100;
 }
 
 
 footer i{
-    font-size: 50px;
+    font-size: 3rem;
     color: #1259c3;
 }
 
-
+.copy{
+    font-size: 0.7rem;
+}
 
 
 /*TABLET*/
@@ -214,7 +242,6 @@ footer i{
     }
 
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
         width: 49%; 
     }
 
@@ -299,8 +326,27 @@ footer i{
     }
 
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
         width: 24%; 
+    }
+
+    /* FOOTER */
+    .margenFooter{
+        display: flex;
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .margenFooter section{
+        margin: 10px;
+    }
+
+    footer i{
+        transition: all 500ms;
+    }
+
+    footer i:hover{
+        font-size: 3.5rem;
+        color: #39b54a;
     }
    
 }
