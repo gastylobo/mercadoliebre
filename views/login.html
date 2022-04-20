@@ -5,21 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Teko&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/login.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 
     <title>Iniciar sesion</title>
   </head>
   <body>
-    <header></header>
+    <header>
+       
+      <div class="header-top">
+          
+          <div class="header-logo-search">
+            <a href="/"><img class="tamanologo" src="static/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></a>
+            
+            <br>
+            <br>
+            
+            <div class="search-header">    
+                <input type="text" placeholder="Buscar productos, marcas">
+                <button><i class="fas fa-search"></i></button>
+              </div>
+          </div>  
+              
+              <p class="copy-header"> <i class="fas fa-money-bill-wave"></i> 
+                  Comprá en cuotas y sin tarjeta de crédito</p>
+                  
+      </div>
+          
+             <ul type = "none" class="listas">
+              <div class="left-listas">
+                 <li><a href="#">Ofertas</a></li>
+                 <li><a href="#">Tiendas Oficiales</a></li>
+                 <li><a href="#">Vender</a></li>
+                 <li><a href="#">Ayuda</a></li>
+              </div>
+                 <br>
+              <div class="rigth-listas">
+                 <li><a href="/register">Creá tu cuenta </a> <i class="fa fa-user"></i></li>  
+                 <li><a href="/login">Ingresá </a> </i><i class="fas fa-sign-in-alt"></i></li> 
+                 <li><a href="#">Mis compras</a><i class="fas fa-shopping-cart"></i></li>
+              </div>
+              </ul>
+          
+          <div class="hamburguesa">
+              <i class="fas fa-bars fa-3x"></i>            
+          </div>
+  
+          <br>
+          <br>
+         
+      </header>
 
     <main>
+      <h1>Iniciar sesion</h1>
+
       <form action="login" class="login">
         <div>
           <label for="Nombre-de-usuari@"></label>

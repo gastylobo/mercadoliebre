@@ -10,11 +10,77 @@ body {
    
 }
 
+/* HEADER*/ 
+
+header{
+    background-color: #EAC926;
+}   
+
+.header-top{
+    text-align: center;
+       
+}
+
+.copy-header{
+    font-size: 16px;
+}
+
+
+.header-logo-search{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tamanologo {
+    width: 70%;
+    flex-grow: 0.4;
+}
+
+.search-header{
+    flex-grow: 0.4;
+
+}
+
+
+.listas a {
+    text-decoration: none;  
+    color: #000000;
+    display: inline-block;
+    padding: 2px;
+}
+
+.listas{
+    display: none;
+}
+
+
+.hamburguesa {
+    text-align: center;
+    color: white;
+    
+}
+
+.hamburguesa i{
+    background-color: #1259c3;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+/* CUERPO */
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 200;
+}
 
 .login {
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
 }
+
+
 
 .login div{
     margin-top: 10px;
@@ -22,7 +88,7 @@ body {
 
 .placeholder{
     text-align: center;
-    width: 30%;
+    width: 70%;
     height: 30px;
     border-radius: 5px;
 }
@@ -37,9 +103,115 @@ body {
     font-size: 1.1rem;
     border-radius: 10px;
     text-decoration: none;
+    transition: all 1000ms ease-out;
 }
 
 .enviar:hover{
-    background-color: greenyellow;
-    border-radius: 100px;
+    background-color: #0022AA;
+    border-radius: 50px;
+}
+
+
+
+
+
+/*TABLET*/
+
+@media (min-width: 361px){
+    
+    .search-header{
+        width: 50%;
+    }
+
+    .header-logo-search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
+
+    .articulos{
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content:space-between;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+        width: 49%; 
+    }
+
+    h3{
+        display: block;
+    }
+
+    .listas{
+        display: block;
+    }
+
+    .hamburguesa{
+        display: none;
+    }
+
+    /*CUERPO*/
+
+    .placeholder {
+        width: 60%;
+    }
+
+}
+
+/*PC*/
+
+@media (min-width: 769px){
+    
+    /*HEADER*/
+    
+    .header-top{
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .search-header {
+        max-width: 35%;
+    }
+    
+    .copy-header{
+       max-width: 30%;
+       text-align: right;
+    }
+
+    
+    .listas{
+        /*border: 2px red dotted;*/
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: .8rem;
+    }
+    
+    .left-listas,  .rigth-listas {
+        display: flex;
+    }
+
+    .left-listas li, .rigth-listas li{
+        margin: 0 10px;
+    }
+
+    
+
+    .hamburguesa{
+        display: none;
+    }
+
+     /*CUERPO*/
+
+     .placeholder {
+        width: 40%;
+    }
 }
