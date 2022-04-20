@@ -98,6 +98,8 @@ h1{
     color: black;
 }
 
+
+
 .enviar{
     width: 150px;   
     font-size: 1.1rem;
@@ -109,7 +111,10 @@ h1{
 .enviar:hover{
     background-color: #0022AA;
     border-radius: 50px;
+    color: white;
 }
+
+
 
 
 

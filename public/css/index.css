@@ -110,7 +110,7 @@ h2{
 }
 
 h3{
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #666;
     display: none;
 }
@@ -178,7 +178,7 @@ article i{
     transition: all 450ms ease-out;
     }
 
-article i:hover{
+article:hover i{
     transform: rotate(-90deg);
     }
 
@@ -345,8 +345,12 @@ footer i{
     }
 
     footer i:hover{
-        font-size: 3.5rem;
+        /* font-size: 3.5rem; */
+        transform: scale(1.2) rotate(360deg) translateY(-10px);
         color: #39b54a;
     }
-   
+
+    article:hover .descripcion{
+        display: block;
+    }
 }
